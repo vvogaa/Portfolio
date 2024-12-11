@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<link href ="mixed-media-gallery/lightbox-css/cwa-lightbox.css" rel ="stylesheet" type="text/css">
+	<link href ="mixed-media-gallery/main-css.css" rel ="stylesheet" type="text/css">
+    
+   <link rel="stylesheet" href="pruebajquery2.css">
+	
+	
+	
+	<style>
+		main{
+
+		}
+		.intro-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #FAFAF5; /* Color de fondo */
+    color: black;
+    text-align: center;
+    z-index: 100; /* Asegura que esté encima */
+    transition: transform 0.6s ease-in-out; /* Suaviza el desplazamiento */
+    transform: translateY(0); /* Posición inicial */
+}
+.intro-screen h1{
+	color: black !important;
+	margin: 0;
+	padding: 0;
+	height: ;
+	font-size: 4em;
+	font-weight: 900;
+}
+.vogaintro{
+width: 10%;
+filter: invert(100%);
+margin-top: 20%;
+
+}
+.intro-screen .containervoga{
+	margin-bottom: 3%;
+}
+.iconosintro{
+	filter: saturate(0%) brightness(1) contrast(300%);
+	padding-bottom: 10vh;
+	line-height: 1em;
+}
+.espacio{
+	margin-top: 9%;
+}
+body{
+			background-color: black;
+
+		}
+		header{
+	text-align: center;
+	padding: 1%;
+	padding-top: 0;
+	background: linear-gradient(to bottom, black 0% , transparent);
+	position: fixed;
+	z-index: 2;
+	height: 13vh;
+}
+		#monito{
+			border-radius: 100%;
+			height: 70%;
+			width: 60%;
+			margin-left: 20%;
+			margin-right: 20%;
+		}
+
+		.close{
+			color: #161616;
+		}
+		.poss{
+			top:0px;
+		}
+		.carousel{
+			height: 100%;
+			width: 100vw;
+		}
+		.alt1{
+			width: 100vw;
+			height: 90vh;
+		}
+		.ratiocomp1{
+			position: relative;
+			width: 100vw;
+			bottom: 0vh;
+		}
+		.alt2{
+			width: 100vw;
+			height: 90vh;
+		}
+		.ratiocomp2{
+			position: relative;
+			width: 38vw;
+			margin-left: 31vw;
+			margin-right: 31vw;
+		}
+		.btn-1{
+			color: whitesmoke;
+            background-color: black;
+            border-color: #565656;
+		}
+		.modal-content{
+			border-radius: 15px;
+			background-color: rgba(0, 0, 0, 0.9);
+			color: whitesmoke;
+		}
+		.modal-header{
+			padding-bottom:0px;
+			border-color: transparent;
+		}
+		.modal-footer{
+			border-color: transparent;
+		}
+		.close{
+			color: whitesmoke;
+		}
+		.relleno{
+			height: 5vh;
+			background-color:black;
+		}
+		.stickyy {
+  position: sticky;
+  top: 0px;
+}
+.zeta{
+			z-index: 0;
+		}
+.zeta2{
+			z-index: 2;
+		}
+.zeta3{
+	z-index: 3 ;
+		}
+.contacto{
+	border-color: transparent;
+	margin-left: 0;
+	margin-top: 0;
+	border-radius: 0px;
+	animation: pulsame 2.2s infinite ease-in-out;
+}
+@keyframes pulsame {
+	0%, 10%, 20% {
+        transform: scale(1);
+    }
+    5%,15% {
+        transform: scale(1.1);
+    }
+    21%,100%{
+    	transform: scale(1);
+    }
+}
+.modal-backdrop.show {
+/*    z-index:0;*/
+
+}
+.insta{
+	width: 5.5%;
+	margin-right: 1.6%;
+	margin-bottom: 1.3%;
+}
+.spoti{
+	width: 6%;
+	margin-right: 1.3%;
+	margin-bottom: 1.1%;
+}
+.phone{
+	width: 6%;
+	margin-right: 0.4%;
+	margin-bottom: 1%;
+}
+.btn-primary{
+	border-radius: 15px;
+	border-color: transparent;
+}
+.btn-primary:hover{
+	background-color:#1F1F1F ;
+	border-color: transparent;
+}
+.btn1{
+	background-color: #4C4C4C;
+	border-color: transparent;
+}
+.btn2{
+	background-color: #393939;
+	border-color: transparent;
+}
+.btn3{
+	background-color: #282828 ;
+	border-color: transparent;
+}
+.miniaturas{
+width: 100%; /* O un tamaño fijo como 150px */
+  height: auto;
+  object-fit: cover; /* Para ajustar la imagen */
+}
+.video-thumbnail {
+  border-radius: 8px; /* Opcional: bordes redondeados */
+ filter: blur(6px) brightness(1.0); 
+  opacity: 0; /* Comienza invisible */
+    transform: translateY(20px);  /*Opcional: desplazar ligeramente hacia abajo */
+    transition: opacity 1s ease, filter 1s ease, transform 1s ease; /* Suavidad al aparecer */
+}
+.video-thumbnail.visible {
+    opacity: 1; /* Gana opacidad completamente */
+    filter: blur(0px) saturate(100%) brightness(1.0);
+    transform: translateY(0); /*Regresa a su posición original */
+}
+.miniaturas:hover{
+	/*
+	filter: blur(50px);
+	opacity: 0;
+	transform: rotate3d(1, 1,0, 100deg) scale(0.2);
+	transition: saturate 1.4s ease-in-out, filter 1.4s ease-in-out,transform 0.7s ease-in-out, border-radius 0.7s ease-in-out, opacity 0.7s ease-in-out;
+	filter: blur(50px);*/
+	opacity: 0.7;
+	filter: saturate(100%);
+	transform: rotate3d(1, 1,0, 20deg) scale(0.96);
+	transition:filter 0.3s ease-in-out,transform 0.3s ease-in-out, border-radius 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.video-section{
+/*	background-image: url('images/fondo.png');
+background-size: cover; 
+background-position: center; 
+background-repeat: no-repeat;*/
+background-color: black;
+border-radius: 3%;
+
+}
+/*.video-thumbnail:hover{
+filter: blur(3px) brightness(0.4);
+
+
+}*/
+.sonido{
+	margin-top: 50vh;
+	clear: both;
+}
+.width1{
+	font-weight: 1000;
+	border-radius: 300px;
+	width: 10%;
+	border: transparent;
+	background-color: #5C51C9;
+	color: #000038;
+	filter: brightness(1.2);
+}
+.width1.active{
+	width: 39%;
+	transition: width 1s ease;
+}
+.width2{
+	font-weight: 1000;
+	border-radius: 300px;
+	width: 10%;
+	border: transparent;
+	background-color: #1A1466;
+	color: #7366FF;
+  filter: brightness(1.2);
+}
+.width2.active{
+	width: 32%;
+	transition: width 1.2s ease;
+}
+.width3{
+	font-weight: 1000;
+	border-radius: 300px;
+	width: 10%;
+	border: transparent;
+	background-color: #00244D;
+	color: #2994FC;
+	filter: brightness(1.2);
+}
+.width3.active{
+	width: 37%;
+	transition: width 1.4s ease;
+}
+.width4{
+	font-weight: 1000;
+	border-radius: 300px;
+	width: 10%;
+	border: transparent;
+	background-color: #132647;
+	color: #5278CB;
+	filter: brightness(1.2);
+		
+}
+.width4.active{
+	width: 39%;
+	transition: width 1.6s ease;
+
+}
+.width5{
+	font-weight: 1000;
+	border-radius: 300px;
+	width: 10%;
+	border: transparent;
+	background-color: #132647;
+	color: #5278CB;
+	filter: brightness(1.2);
+		
+}
+.width5.active{
+	width: 25%;
+	transition: width 1.6s ease;
+
+}
+.stats{
+	filter: saturate(100%) brightness(1.3);
+	position: absolute;
+	z-index: 1 !important;
+}
+.enter{
+	height: 0.8em;
+	width: 100vw;
+}
+
+.desat{
+filter: saturate(0%) opacity(30%);
+}
+.textstats{
+	font-size: 5vw;
+	margin: auto;
+	width: 50vw;
+}
+.packstats{
+	width: 50vw;
+	flex-wrap: wrap;
+}
+.padreflex{
+	margin-top: 10vh;
+	margin-bottom: 15vh;
+	display: flex;
+	justify-content:space-evenly;
+}
+#stats{
+
+  color: transparent; /* Hace el texto transparente */
+  background-image: url('overlays/paper.gif'); /* Imagen de fondo */
+  background-size: cover; /* Asegura que la imagen cubra el texto */
+  background-repeat: no-repeat; /* No repite la imagen */
+  background-clip: text; /* La imagen solo afecta al texto */
+  -webkit-background-clip: text; /* Soporte para navegadores basados en WebKit */
+
+}
+.modal-backdrop{
+	background-color: black; !important;
+}
+.audio-player {
+  width: 300px;
+  box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.8);
+
+}
+.row{
+
+    justify-content: space-evenly; /* Distribuye los elementos de forma uniforme */
+    align-items: center; /* (Opcional) Asegura que estén centrados verticalmente */
+}
+
+.progress-container {
+  width: 100%;
+  height: 6px;
+  background-color: rgba(240, 240, 240, 1.0);
+/*  box-shadow: 0 0 40px 2px rgba(0, 0, 0, 0.5);*/
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 10px 0;
+  position: relative;
+
+}
+
+#progress-bar1 {
+  width: 0%;
+  height: 10px;
+  background-color: #008257;
+ transition: width 0.1s linear;
+ }
+ #progress-bar2 {
+  width: 0%;
+  height: 10px;
+  background-color: #008257;
+  transition: width 0.1s linear;
+ }
+ #progress-bar3 {
+  width: 0%;
+  height: 10px;
+  background-color: #008257;
+  transition: width 0.1s linear;
+ }
+ #progress-bar4 {
+  width: 0%;
+  height: 10px;
+  background-color: #008257;
+  transition: width 0.1s linear;
+ }
+ #progress-bar5 {
+  width: 0%;
+  height: 10px;
+  background-color: #008257;
+  transition: width 0.1s linear;
+ }
+  button{
+  	border-radius: 20px;
+  	padding-left:4%;
+  	padding-right:4%;
+  	border-color: transparent;
+  	color: whitesmoke;
+/* 	text-shadow: 0px 0px 3px black ;*/
+  	font-weight: bolder;
+  }
+  .Audios button img{
+  	filter: invert(100%);
+  	text-shadow: 0 0 0px 10px rgba(255, 255, 255, 0.9);
+  }
+  .Audios button:hover{
+  	filter: brightness(0.8);
+  	transition: filter 0.3s ease-in-out;
+  }
+  .Audios{
+  	box-shadow: inset 0 0 200px 100px black;
+  	background-image: url('overlays/fondospoti.png');
+background-size: cover; 
+background-position: center; 
+background-repeat: no-repeat;
+padding-top: 10%;
+padding-bottom: 10%;
+padding-left: 4%;
+padding-right: 4%;
+height: auto;
+  }
+  #play-button1{
+  	background-color: rgba(0, 0, 0, 0.0);
+  	opacity: 1;
+
+
+  }
+  #play-button2{
+  	background-color: rgba(0, 0, 0, 0.0);
+  	opacity: 1;
+  }
+  #play-button3{
+  	background-color: rgba(0, 0, 0, 0.0);
+  	opacity: 1;
+  	filter: brightness(1);
+  }
+  #play-button4{
+  	background-color: rgba(0, 0, 0, 0.0);
+  	opacity: 1;
+  	filter: brightness(1);
+  }
+  #play-button5{
+  	background-color: rgba(0, 0, 0, 0.0);
+  	opacity: 1;
+  	filter: brightness(1);
+  }
+
+  .audiouno{
+  	background-image: url("icons/twib.png");
+  	background-size: cover; 
+background-position: center; 
+background-repeat: no-repeat;
+  	border-radius: 90px 90px 90px 90px;
+  	filter: brightness(1.0);
+  	filter:saturate(0%);
+  	transition: filter 0.2s ease-in-out;
+  	z-index: 1;
+  }
+  .audiouno:hover{
+  	filter: brightness(1.1) saturate(190%);
+  	transition: filter 0.2s ease-in-out;
+  }
+  .audiodos{
+  	background-image: url("icons/pssqeiaudio.png");
+  	background-size: cover; 
+background-position: center; 
+background-repeat: no-repeat;
+  	border-radius: 90px 90px 90px 90px;
+  	filter: brightness(1.3);
+  	filter:saturate(0%);
+  	transition: filter 0.2s ease-in-out;
+  	z-index: 1;
+  }
+  .audiodos:hover{
+  	filter: brightness(1.0) saturate(130%);
+  	transition: filter 0.2s ease-in-out;
+  }
+  .audiotres{
+  	background-image: url("icons2/OVSK.png");
+  	background-size: cover; 
+background-position: center; 
+background-repeat: no-repeat;
+  	border-radius: 90px 90px 90px 90px;
+  	filter: brightness(1);
+  	filter:saturate(0%);
+  	transition: filter 0.2s ease-in-out;
+  	z-index: 1;
+  }
+  .audiotres:hover{
+  	filter: brightness(1.2);
+  	transition: filter 0.2s ease-in-out;
+  }
+  .audiocuatro{
+  	background-image: url("icons2/bluu.png");
+  	background-size: cover; 
+background-position: center; 
+background-repeat: no-repeat;
+  	border-radius: 90px 90px 90px 90px;
+  	filter: brightness(1);
+  	filter:saturate(0%);
+  	transition: filter 0.2s ease-in-out;
+  	z-index: 1;
+  }
+  .audiocuatro:hover{
+  	filter: brightness(1.2);
+  	transition: filter 0.2s ease-in-out;
+  }
+  .audiocinco{
+  	background-image: url("icons/petriiii.png");
+  	background-size: cover; 
+background-position: center; 
+background-repeat: no-repeat;
+  	border-radius: 90px 90px 90px 90px;
+  	filter: brightness(1);
+  	filter:saturate(0%);
+  	transition: filter 0.2s ease-in-out;
+  	z-index: 1;
+  }
+  .audiocinco:hover{
+  	filter: brightness(1.6) saturate(130%);
+  	transition: filter 0.2s ease-in-out;
+  }
+  .pt-A{
+  	padding-top: 2rem;
+  }
+  .canciones1{
+  	color: whitesmoke;
+  }
+  .canciones2{
+  	color: whitesmoke;
+  }
+  .canciones3{
+  	color: whitesmoke;
+  }
+  .canciones4{
+  	color: whitesmoke;
+  }
+  .canciones5{
+  	color: whitesmoke;
+  }
+  .mt-A{
+  	margin-top: 7rem;
+  }
+  .mb-A{
+  	margin-top: 6rem;
+  }
+  .testo{
+  	text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+  }
+ 
+
+  .daws{
+  	height: 20vh;
+  	overflow: hidden;
+  }
+  #worktools{
+  	margin-top: 0 !important;
+  	color: transparent; /* Hace el texto transparente */
+  background-image: url('overlays/flames3.gif'); /* Imagen de fondo */
+  background-size: cover; /* Asegura que la imagen cubra el texto */
+  background-repeat: no-repeat; /* No repite la imagen */
+  background-clip: text; /* La imagen solo afecta al texto */
+  -webkit-background-clip: text; /* Soporte para navegadores basados en WebKit */
+  text-shadow: 0 0 30px rgba(250, 120, 80, 0.3);
+    filter: contrast(40%) saturate(0%) brightness(1.5);
+  }
+a{
+	margin:0;
+	padding:0;
+	display: inline-block; 
+	text-decoration: none;
+}
+.aspoti{
+	margin-left:4%;
+margin-right: 4%;
+}
+.spoti2{
+filter: invert(100%);
+width: 50px;
+}
+.insta2{
+	filter: brightness(0.55) contrast(500%);
+	width: 40px;
+}
+.youtube2{
+	width: 50px;
+}
+#intro-screen .aspoti:hover{
+filter:blur(200px);
+}
+#intro-screen .ainsta:hover{
+	filter:blur(200px);
+}
+#intro-screen .ayoutube:hover{
+filter:blur(200px);
+}
+.ayoutube{
+	transition: filter 0.3s ease-in;
+filter:blur(0px);
+}
+.ainsta{
+		transition: filter 0.3s ease-in;
+filter:blur(0px);
+}
+.aspoti{
+		transition: filter 0.3s ease-in;
+filter:blur(0px);
+}
+.carousel-control-next-icon{
+width: 35px !important;
+height: 35px !important;
+mix-blend-mode: difference !important;
+animation: pulsame 2s infinite ease-in-out;
+ backdrop-filter: blur(10px);
+ filter: saturate(0%);
+}
+
+.carousel-control-prev-icon{
+	opacity: 1!important;
+width: 35px !important;
+height: 35px !important;
+animation: pulsame 2s infinite ease-in-out;
+ backdrop-filter: blur(10px);
+ filter: saturate(0%);
+
+}
+.carousel-control-prev{
+opacity:1 !important;
+mix-blend-mode: difference;
+ backdrop-filter: blur(0px);
+  transition: backdrop-filter 0.3s ease-in-out  ;
+}
+.carousel-control-next{
+opacity:1 !important;
+mix-blend-mode: difference;
+ backdrop-filter: blur(0px);
+ transition: backdrop-filter 0.3s ease-in-out  ;
+}
+.carousel-control-next:hover{
+backdrop-filter: blur(3px);
+    background: rgba(255, 255, 255, 0.0);
+}
+.carousel-control-prev:hover{
+	backdrop-filter: blur(3px);
+}
+.carousel-control-next:hover::before{
+	backdrop-filter: blur(3px);
+	 background: radial-gradient(circle, rgba(255, 255, 255, 0.5) 0%, transparent 70%);
+    z-index: -1;
+    transform: translate(-25%, -25%);
+}
+footer{
+background-color: #0A0A0A;
+}
+footer p{
+	font-size: 0.8em;
+	font-weight: 200;
+	color: #3C3C3C;
+}
+footer h4{
+	color: #5E5E5E;
+}
+</style>
+</head>
+<body>
+
+
+
+	<div id="intro-screen" class="intro-screen">
+        <div class="container video-thumbnail containervoga">
+        	<div class="row justify-content-around">
+        			<img src="icons/voga.png" alt="VOGA" class="vogaintro">
+
+        	</div>
+        	        	<h1>voga.</h1>
+        </div>
+        <div class="espacio"></div>
+        
+        <p id="click-message" style="opacity: 0; transition: opacity 3s;">Haz clic en cualquier lugar para continuar</p>
+        <div class="container video-thumbnail">
+        	<div class="row iconosintro justify-content-center">
+        		<a href="https://www.instagram.com/vvogaa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="ainsta" >
+        		<img src="icons3/insta2.png" alt="" class="insta2"></a>
+        		<a href="https://open.spotify.com/intl-es/artist/4PbJbJkKSXe0FeJLmOUzSs?si=8hZI52cPRGqvVADcV0kU3A" target="_blank" class="aspoti" >
+        		<img src="icons3/spotify.png" alt="" class="spoti2 "></a>
+        		<a href="https://www.youtube.com/@vvogaa" target="_blank" class="ayoutube">
+        		<img src="icons3/youtube.png" alt="" class="youtube2 "></a>
+        	</div>
+        </div>
+    </div>
+
+
+
+    <div id="main-content" class="main-content">
+	<header>
+		<div class="voga d-flex justify-content-center align-content-center">
+			<div class="vogalogo d-flex align-items-center text-start">
+			<div id="logo">	
+			</div>
+			<h1>voga.</h1>
+			</div>
+		</div>
+	</header>
+	<main>
+	<section class="video-section">
+        <h2 class="gallery-heading video-thumbnail pb-2"><a name="images">Audiovisual</a></h2>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+<div class=" col-12 p-0 mx-auto my-0 zeta2">
+	<h2 class="video-thumbnail gallery-heading my-0 ml-5 zeta"><a name="images">Photography</a></h2>
+	<div class=" mx-auto my-0 zeta">
+		<div class="mx-auto my-0 zeta">
+<div id="carouselExampleIndicators" class="carousel slide col-12 p-0 justify-content-center align-content-center poss my-0 zeta" data-ride="carousel">
+	<div class="stickyy container px-0 col-12 zeta3">
+	<button type="button" class=" col-12 mx-auto btn-1 stickyy  contacto zeta3" data-toggle="modal" data-target="#staticBackdrop">
+       C  o  n  t  a  c  t
+</button>
+</div>
+<div class="video-thumbnail">
+  <ol class="carousel-indicators zeta2">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+    <!-- <li data-target="#carouselExampleIndicators" data-slide-to="10"></li> -->
+  </ol>
+  <div class="carousel-inner ">
+    <div class="carousel-item active">
+      <img src="photos3/Asturias1.jpg" class="d-block ratiocomp1" alt="...">
+    </div>
+    <div class="carousel-item ">
+      <img src="photos3/Asturias2.jpg" class="d-block ratiocomp1" alt="...">
+    </div>
+    <div class="carousel-item ">
+      <img src="photos4/mar.jpg" class="d-block ratiocomp1" alt="...">
+    </div>
+    <div class="carousel-item ">
+      <img src="photos4/luna.jpg" class="d-block ratiocomp1" alt="...">
+    </div>
+    <div class="carousel-item ">
+      <img src="photos2/bigbens.jpg" class="d-block ratiocomp1" alt="...">
+    </div>
+    <div class="carousel-item ">
+      <img src="photos1/ojogaviota.jpg" class="d-block ratiocomp1" alt="...">
+    </div>
+    <div class="carousel-item ">
+      <img src="photos1/pelicanos.jpg" class="d-block ratiocomp1" alt="...">
+    </div>
+    <div class="carousel-item ">
+      <img src="photos2/celiacamdem.jpg" class="d-block ratiocomp1" alt="...">
+    </div>
+    <div class="carousel-item ">
+      <img src="photos1/sohobus.jpg" class="d-block ratiocomp1" alt="...">
+    </div>
+ <!--    <div class="carousel-item ">
+      <img src="images/gata.jpg" class="d-block ratiocomp1" alt="...">
+    </div> -->
+  </div>
+  <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </button>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<div class="padreflex">
+<div class="packstats">
+<div class="enter"></div>
+<div class="stats mt-5">
+<button class="py-1 width1 mx-5 text-center" id="myButton">Premiere</button>
+<div class="enter"></div>
+<div class="enter"></div>
+<button class="py-1 width2 mx-5 text-center" id="myButton">AfterEffects</button>
+<div class="enter"></div>
+<div class="enter"></div>
+<button class="py-1 width3 mx-5 text-center" id="myButton">Photoshop</button>
+<div class="enter"></div>
+<div class="enter"></div>
+<button class="py-1 width4 mx-5 text-center" id="myButton">Lightroom</button>
+<div class="enter"></div>
+<div class="enter"></div>
+<button class="py-1 width5 mx-5 text-center" id="myButton">Blender</button>
+</div>
+<div class=" video-thumbnail desat mt-5">
+<button class="py-1 width mx-5 text-right " id="myButton">85%</button>
+<div class="enter"></div>
+<div class="enter"></div>
+<button class="py-1 width mx-5 text-right " id="myButton">70%</button>
+<div class="enter"></div>
+<div class="enter"></div>
+<button class="py-1 width mx-5 text-right " id="myButton">80%</button>
+<div class="enter"></div>
+<div class="enter"></div>
+<button class="py-1 width mx-5 text-right " id="myButton">85%</button>
+<div class="enter"></div>
+<div class="enter"></div>
+<button class="py-1 width mx-5 text-right pr-3" id="myButton">50%</button>
+</div>
+</div>
+<div class=" textstats">
+<h5 class="text-center video-thumbnail gallery-heading zeta3 mt-5 pt-5" id="stats">STATS</h5>
+</div>
+</div>
+<div class="enter"></div>
+<div class="enter"></div>
+<div class="enter"></div>
+<div class="enter"></div>
+<div class="enter"></div>
+<h2 class="gallery-heading video-thumbnail sonido mt-5 ml-5">Music</h2>
+
+
+<div class=" Audios container col-12">
+  <div class="row col-12 justify-content-around">
+
+    <!-- Primer reproductor de audio -->
+    <div class=" video-thumbnail canciones1 row col-12 justify-content-around mt-A">
+    <div class=" col-4 px5"><p class="testo">T.W.I.B - Voga (Composition, Interpretation, Production, Mix y Mastering)</p></div>
+    <div class=" audio-player align-items-center audiouno row col-4 px-3">
+      <button id="play-button1" class="mx-auto pt-4 pb-2" data-audio="audio1">
+        <img src="mixed-media-gallery/play.svg" alt="PLAY" width="24" height="24">
+      </button>
+      <audio id="audio1" src="songs2/TWIB.mp3"></audio>
+      <div class=" progress-container mt-0 mb-2 mx-3" id="progress-container1">
+        <div id="progress-bar1" class="progress-bar"></div>
+      </div>
+    </div>
+    </div>
+
+
+    <!-- Segundo reproductor de audio -->
+    <div class=" video-thumbnail canciones2 row col-12 justify-content-around my-4">
+    <div class=" col-4 px5"><p class="testo">Por si se queda en instagram - Voga (Composition, Interpretation, Production, Mix y Mastering)</p></div>
+    <div class="audio-player audiodos align-items-center row col-4 px-3">
+      <button id="play-button2" class="mx-auto pt-4 pb-2" data-audio="audio1">
+        <!-- Icono Play -->
+        <img src="mixed-media-gallery/play.svg" alt="PLAY" width="24" height="24">
+      </button>
+      <audio id="audio2" src="songs2/PSSQEIPITCH.mp3"></audio>
+      <div class="progress-container pb-0 mt-0 mb-2 mx-3" id="progress-container2">
+        <div id="progress-bar2" class="progress-bar"></div>
+      </div>
+    </div>
+    </div>
+
+    <!-- Tercer reproductor de audio -->
+    <div class="video-thumbnail canciones3 row col-12 justify-content-around">
+    <div class=" col-4 px5"><p class="testo">Oversinkin' - Voga, EUCALI (Co-composition, Interpretation, Production, Mix y Mastering)</p></div>
+    <div class="audio-player audiotres align-items-center row col-4 px-3">
+      <button id="play-button3" class="mx-auto pt-4 pb-2" data-audio="audio1">
+        <!-- Icono Play -->
+        <img src="mixed-media-gallery/play.svg" alt="PLAY" width="24" height="24">
+      </button>
+      <audio id="audio3" src="songs1/oversinkin.mp3"></audio>
+      <div class="progress-container mt-0 mb-2 mx-3" id="progress-container3">
+        <div id="progress-bar3" class="progress-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="video-thumbnail canciones4 row col-12 justify-content-around mt-4">
+    <div class=" col-4 px5"><p class="testo">Blu - Voga (Composition, Interpretation, Production, Mix y Mastering)</p></div>
+    <div class="audio-player audiocuatro align-items-center row col-4 px-3">
+      <button id="play-button4" class="mx-auto pt-4 pb-2" data-audio="audio1">
+        <!-- Icono Play -->
+        <img src="mixed-media-gallery/play.svg" alt="PLAY" width="24" height="24">
+      </button>
+      <audio id="audio4" src="songs1/blu.mp3"></audio>
+      <div class="progress-container mt-0 mb-2 mx-3" id="progress-container4">
+        <div id="progress-bar4" class="progress-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="video-thumbnail canciones5 row col-12 justify-content-around mt-4">
+    <div class=" col-4 px5"><p class="testo">PETRICOR FREESTYLE (Prod. voga)- Yung Xhris, EUCALI (Production, Mix y Mastering)</p></div>
+    <div class="audio-player audiocinco align-items-center row col-4 px-3">
+      <button id="play-button5" class="mx-auto pt-4 pb-2" data-audio="audio1">
+        <!-- Icono Play -->
+        <img src="mixed-media-gallery/play.svg" alt="PLAY" width="24" height="24">
+      </button>
+      <audio id="audio5" src="songs1/petricor.mp3"></audio>
+      <div class="progress-container mt-0 mb-2 mx-3" id="progress-container5">
+        <div id="progress-bar5" class="progress-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
+<div class=" textstats">
+<h5 class="text-center video-thumbnail gallery-heading zeta3 mt-1 pt-5" id="worktools">SOUND TOOLS</h5>
+</div>
+<div class=" container">
+	<div class="daws video-thumbnail row d-flex justify-content-center align-items-center my-5">
+	   <div class=" LogicX  col-auto ">
+		<img src="icons3/logic-pro-x-2015-04-14.png" alt="FL STUDIO" class="imglogic">
+	   </div>
+	   <div class=" Flstudio  col-auto ">
+		<img src="icons3/Fl-Studio.png" alt="FL STUDIO" class=" imgfl">
+	   </div>
+	   <div class="  mesa col-auto ">
+		<img src="icons3/mesa.png" alt="CONTROL DE MESA DIGITAL/ANALOGICA" class="imgmesa float-left pl-0">
+	   </div>
+	</div>
+</div>
+
+
+
+<div class="relleno">
+</div>
+
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Guillermo Govantes de León</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img id="monito" src="icons3/perfil.png" alt="">
+      </div>
+      <div class="modal-footer ">
+        <button type="button" class="btn btn-primary btn3" data-dismiss="modal" onclick="window.open('https://www.instagram.com/vvogaa/', '_blank');"><img src="icons3/insta.png" class="insta">@vvogaa</button>
+        <button type="button" class="btn btn-primary btn2" data-dismiss="modal" onclick="window.open('https://open.spotify.com/intl-es/artist/4PbJbJkKSXe0FeJLmOUzSs?si=UlQnProVTQOdzYzs2WYwJA');"><img src="icons3/spotify.png" class="spoti">Voga</button>
+        <button type="button" class="btn btn-primary btn1" onclick="copyTextToClipboard('+34 671 91 57 82')" ><img src="icons/phone.png" class="phone">+34 671 91 57 82</button>
+        <p id="message" class="mt-3"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</main>
+<footer>
+	<div class="container otroslinks">
+		<div class="row flex-column">
+			<br>
+			<h4>Otros links</h4>
+
+			<div class="itemsfooter row">
+			<a href="DOC/BIBLIA RECU.pdf" target="_blank"><p>Preproducción</p></a>
+			</div>
+		</div>
+	</div>
+</footer>
+<script>
+// Seleccionar la pantalla inicial y el contenido principal
+const introScreen = document.getElementById('intro-screen');
+const mainContent = document.getElementById('main-content');
+
+// Deshabilitar el scroll inicialmente
+document.body.style.overflow = 'hidden';
+
+// Añadir evento de clic a la pantalla inicial
+introScreen.addEventListener('click', () => {
+    // Desplazar la pantalla inicial hacia arriba
+    introScreen.style.transform = 'translateY(-100%)';
+
+    // Esperar a que termine la animación antes de habilitar el scroll
+    introScreen.addEventListener('transitionend', () => {
+        // Habilitar el scroll del contenido principal
+        document.body.style.overflow = 'auto';
+    }, { once: true }); // Asegurarse de que el evento se ejecute solo una vez
+});
+
+const clickMessage = document.getElementById('click-message'); // Selecciona el mensaje
+
+// Mostrar el mensaje después de 3 segundos
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        clickMessage.style.opacity = 1; // Hace visible el mensaje con una transición suave
+    }, 2000); // Espera 3 segundos
+});
+
+
+
+    function copyTextToClipboard(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        // Muestra un mensaje de confirmación
+        document.getElementById('message').textContent = 'Texto copiado: ' + text;
+      }).catch(err => {
+        console.error('Error al copiar: ', err);
+      });
+    }
+
+
+
+// Función para manejar la reproducción de audio y la barra de progreso
+// Función para manejar la reproducción de audio y la barra de progreso
+function setupAudioPlayer(audioId, progressContainerId, progressBarId, playButtonId, allPlayers) {
+    const audio = document.getElementById(audioId);
+    const progressContainer = document.getElementById(progressContainerId);
+    const progressBar = document.getElementById(progressBarId);
+    const playButton = document.getElementById(playButtonId);
+    const playIconPath = 'mixed-media-gallery/play.svg'; // Ruta del ícono de "Play"
+    const pauseIconPath = 'mixed-media-gallery/pause.svg'; // Ruta del ícono de "Pause"
+    const playIcon = playButton.querySelector('img'); // Seleccionar el elemento img del botón
+
+    // Función para actualizar la barra de progreso
+    audio.ontimeupdate = function () {
+        const percentage = (audio.currentTime / audio.duration) * 100;
+        progressBar.style.width = percentage + '%';
+    };
+
+    // Función para manejar el clic en la barra de progreso
+    progressContainer.addEventListener('click', function (event) {
+        const progressWidth = progressContainer.offsetWidth;
+        const clickPosition = event.offsetX;
+        const newTime = (clickPosition / progressWidth) * audio.duration;
+        audio.currentTime = newTime;
+    });
+
+    // Función para controlar la reproducción con el botón
+    playButton.addEventListener('click', function () {
+        if (audio.paused) {
+            // Pausar todos los demás audios
+            allPlayers.forEach(player => {
+                if (player.audio !== audio) {
+                    player.audio.pause();
+                    player.playIcon.src = playIconPath; // Cambiar ícono a "Play"
+                    player.playIcon.alt = 'PLAY';
+                }
+            });
+
+            // Reproducir el audio actual
+            audio.play();
+            playIcon.src = pauseIconPath; // Cambiar ícono a "Pause"
+            playIcon.alt = 'PAUSE';
+        } else {
+            // Pausar el audio actual
+            audio.pause();
+            playIcon.src = playIconPath; // Cambiar ícono a "Play"
+            playIcon.alt = 'PLAY';
+        }
+    });
+
+    // Restablecer el ícono cuando el audio termina
+    audio.onended = function () {
+        playIcon.src = playIconPath; // Cambiar ícono a "Play"
+        playIcon.alt = 'PLAY';
+    };
+
+    // Agregar este reproductor a la lista de todos los reproductores
+    allPlayers.push({ audio, playIcon });
+}
+
+// Lista de todos los reproductores de audio
+const allPlayers = [];
+
+// Configuración de los reproductores de audio
+setupAudioPlayer('audio1', 'progress-container1', 'progress-bar1', 'play-button1', allPlayers);
+setupAudioPlayer('audio2', 'progress-container2', 'progress-bar2', 'play-button2', allPlayers);
+setupAudioPlayer('audio3', 'progress-container3', 'progress-bar3', 'play-button3', allPlayers);
+setupAudioPlayer('audio4', 'progress-container4', 'progress-bar4', 'play-button4', allPlayers);
+setupAudioPlayer('audio5', 'progress-container5', 'progress-bar5', 'play-button5', allPlayers);
+  </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+	<script defer src="mixed-media-gallery/main-js.js"></script>
+<script defer src="mixed-media-gallery/lightbox-js/cwa-image-lightbox.js"></script>
+<script defer src="mixed-media-gallery/lightbox-js/cwa-video-lightbox.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>
