@@ -176,12 +176,21 @@ background-repeat: no-repeat;*/
     padding-bottom: 1.7%;
 }
 
+.iconosintro{
+    filter: saturate(0%) brightness(1) contrast(300%);
+    padding-bottom: 10vh;
+    line-height: 1em;
+
+}
+
 @media screen and (max-width: 1080px){
     .contacto{
   padding-top: 2.2% !important;
     padding-bottom: 2.2% !important;
 }
-
+.iconosintro{
+    padding-top: 40vh;
+}
 }
 /*Tablet*/
 @media screen and (max-width: 768px){
@@ -224,6 +233,10 @@ background-repeat: no-repeat;*/
   padding-top: 4.3% !important;
     padding-bottom: 4.3% !important;
 }
+.iconosintro{
+    padding-top: 40vh;
+}
+
 }
 
 /*Mobile*/
