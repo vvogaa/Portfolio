@@ -25,22 +25,22 @@ $(function(){
     
     const arrVideos = [
         {
-            src: "https://www.youtube.com/embed/Q1ijYhvaBZg",
+            src: "canva/canvaOS2.mp4",
             desc: "Spotify Canva, Music, Mix & Master",
             thumbnail: "thumbs1/canvaOS.png"
         },
         {
-            src: "videos/alitas.mp4",
+            src: "alitas/alitas_1.mp4",
             desc: "Videoclip, Music, Lyrics, Mix & Master",
             thumbnail: "thumbs1/alitas.png"
         },
          {
-            src: "videos/blu.mp4",
+            src: "blu/blu.mp4",
             desc: "Visualizer, Music, Lyrics, Mix & Master",
             thumbnail: "thumbs1/blu.png"
         },
         {
-            src: "videos/RRSS1.mp4",
+            src: "rrss/RRSS2.mp4",
             desc: "Cover art, Promo reel, Music, Lyrics, Mix & Master",
             thumbnail: "thumbs2/RRSS.png"
         },
@@ -50,62 +50,52 @@ $(function(){
             thumbnail: "thumbs2/PSSQEI.png"
         },
         {
-            src: "video2/porsi.mp4",
+            src: "porsi/porsi.mp4",
             desc: "Visualizer montage, VFX, Music, Lyrics, Mix & Master",
             thumbnail: "thumbs2/porsi.png"
         },
         {
-            src: "videos/texturess.mp4",
+            src: "textures/texturess_1.mp4",
             desc: "3D Textures",
             thumbnail: "thumbs1/textures.png"
         },
         {
-            src: "videos/Animation.mp4",
+            src: "animation/Animation_1.mp4",
             desc: "3D Riggin, Animation, UV, Sound design",
             thumbnail: "thumbs1/bolacola.jpg"
         },
-        // {
-        //     src: "videos/bolacolaFAIL.mp4",
-        //     desc: "3D Riggin, Animation",
-        //     thumbnail: "images/thumbs1/bolacola.jpg"
-        // },
         {
             src: "video1/SHAPES.mp4",
             desc: "3D Models, Shape keys",
             thumbnail: "thumbs2/shapes.png"
         },
-        // {
-        //     src: "videos/pixarr.mp4",
-        //     desc: "3D Animation",
-        //     thumbnail: "images/thumbs1/pixarr.jpg"
-        // },
         {
-            src: "videos/sfxpato.mp4",
+            src: "pato/sfxpato1.mp4",
             desc: "Sound design",
             thumbnail: "thumbs2/sfxpato.png"
         },
         {
-            src: "videos/videocoche.mov",
+            src: "coche/videocoche1.mp4",
             desc: "Sound design",
             thumbnail: "thumbs1/videocoche.png"
         },
         {
-            src: "videos/guess.mp4",
+            src: "guess/guess_1.mp4",
             desc: "Motion graphics, Sound design",
             thumbnail: "thumbs1/ojo.png"
         },
         {
-            src: "videos/petri.mp4",
+            src: "petri/petri.mp4",
             desc: "3D, VFX, Montage, Music, Lyrics, Mix & Master",
             thumbnail: "thumbs1/petri.png"
         },
         {
-            src: "videos/teaser.mp4",
+            src: "teaser/teaser1.mp4",
             desc: "Teaser Montage, Sound design",
             thumbnail: "thumbs2/teaser.png"
         },
         {
-            src: "videos/SOS.mp4",
+            src: "sos/SOS_1.mp4",
             desc: "VFX, Montage, Camera",
             thumbnail: "thumbs2/sos.jpg"
         },
@@ -116,9 +106,9 @@ $(function(){
     
     const arrMedia = [
         {
-            src: "https://www.jqueryscript.net/dummy/1.jpg",
-            type: "image",
-            desc: "Image Description"
+            src:"https://www.youtube.com/embed/Q1ijYhvaBZg",
+            type: "iframe",
+            desc: "Spotify Canva, Music, Mix & Master"
         },
         {
             src: "https://www.jqueryscript.net/dummy/1.mp4",
