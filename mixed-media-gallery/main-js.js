@@ -25,7 +25,7 @@ $(function(){
     
     const arrVideos = [
         {
-            src: "videos/canvaOS1.mp4",
+            src: "https://www.youtube.com/embed/Q1ijYhvaBZg",
             desc: "Spotify Canva, Music, Mix & Master",
             thumbnail: "thumbs1/canvaOS.png"
         },
@@ -45,12 +45,12 @@ $(function(){
             thumbnail: "thumbs2/RRSS.png"
         },
          {
-            src: "videos/PSSQEI.mp4",
+            src: "video1/PSSQEI.mp4",
             desc: "Kinetic text, Animation, Music, Lyrics, Mix & Master",
             thumbnail: "thumbs2/PSSQEI.png"
         },
         {
-            src: "videos/porsi.mp4",
+            src: "video2/porsi.mp4",
             desc: "Visualizer montage, VFX, Music, Lyrics, Mix & Master",
             thumbnail: "thumbs2/porsi.png"
         },
@@ -70,7 +70,7 @@ $(function(){
         //     thumbnail: "images/thumbs1/bolacola.jpg"
         // },
         {
-            src: "videos/SHAPES.mp4",
+            src: "video1/SHAPES.mp4",
             desc: "3D Models, Shape keys",
             thumbnail: "thumbs2/shapes.png"
         },
