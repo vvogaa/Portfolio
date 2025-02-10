@@ -28,28 +28,30 @@
     z-index: 100; /* Asegura que esté encima */
     transition: transform 0.6s ease-in-out; /* Suaviza el desplazamiento */
     transform: translateY(0); /* Posición inicial */
-	overflow: hidden;
+    overflow: hidden;
 }
 .intro-screen h1{
 	color: black !important;
 	margin: 0;
 	padding: 0;
 	height: ;
-	font-size: 4em;
+/*	font-size: 4em;*/
+line-height: 0em;
 	font-weight: 900;
 }
 .vogaintro{
-width: 10%;
-filter: invert(100%);
-margin-top: 20%;
 
+/*filter: invert(100%);*/
+height: 50vh;
+margin: auto;
+margin-top: 9%;
 }
 .intro-screen .containervoga{
-	margin-bottom: 3%;
+	margin-bottom: 0%;
 }
 
 .espacio{
-	margin-bottom: 11vw;
+	margin-bottom: 0vw;
 }
 body{
 			background-color: black;
@@ -64,6 +66,24 @@ body{
 	z-index: 2;
 	height: 13vh;
 }
+.presentacion{
+	position: relative;
+	height: 50vh;
+	width: 100vw;
+	background-image: url('headervideo/headervideo.gif');
+background-size: cover; 
+background-position: center; 
+background-repeat: no-repeat;
+margin-bottom: 40vh;
+}
+.rellenopresentacion{
+	position: relative;
+	background-color: black;
+	margin: 0;
+	padding: 0;
+	height:20vh;
+}
+
 		#monito{
 			border-radius: 100%;
 			height: 70%;
@@ -742,14 +762,14 @@ footer h4{
 	<div id="intro-screen" class="intro-screen">
         <div class="container video-thumbnail containervoga">
         	<div class="row justify-content-around">
-        			<img src="logogif/vogagif.gif" alt="VOGA" class="vogaintro">
+        			<img src="logogif/vogagif3.gif" alt="VOGA" class="vogaintro">
 
         	</div>
-        	        	<h1>voga.</h1>
+        	        	<!-- <h1>voga.</h1> -->
         </div>
         <div class="espacio"></div>
         
-        <p id="click-message" style="opacity: 0; transition: opacity 3s;">Haz clic en cualquier lugar para continuar</p>
+        <p id="click-message" class="pb-5 pt-0" style="opacity: 0; transition: opacity 3s;">Haz clic en cualquier lugar para continuar</p>
         <div class="container video-thumbnail">
         	<div class="row iconosintro justify-content-center">
         		<a href="https://www.instagram.com/vvogaa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="ainsta" >
@@ -775,6 +795,11 @@ footer h4{
 		</div>
 	</header>
 	<main>
+		<div class="rellenopresentacion zeta3"></div>
+		<section class="presentacion zeta3 justify-content-center d-flex">
+			<h1 class="row col-12" >voga.</h1>
+		</section>
+
 	<section class="video-section">
         <h2 class="gallery-heading video-thumbnail pb-2"><a name="images">Audiovisual</a></h2>
     </section>
@@ -1099,7 +1124,7 @@ const clickMessage = document.getElementById('click-message'); // Selecciona el 
 window.addEventListener('load', () => {
     setTimeout(() => {
         clickMessage.style.opacity = 1; // Hace visible el mensaje con una transición suave
-    }, 2000); // Espera 3 segundos
+    }, 3000); // Espera 3 segundos
 });
 
 
