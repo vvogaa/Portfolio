@@ -27,7 +27,7 @@ $(function(){
         {
             src: "BEArnr/BEArnr.mp4",
             desc: "Spotify Canva, Music, Mix & Master",
-            thumbnail: "BEArnr/BEArnr.jpg"
+            thumbnail: "BEArnr/BEArnr.png"
         },
         {
             src: "canva/canvaOS2.mp4",
