@@ -95,6 +95,11 @@ $(function(){
             thumbnail: "thumbs1/petri.png"
         },
         {
+            src: "sos/SOS_1.mp4",
+            desc: "VFX, Montage, Camera",
+            thumbnail: "thumbs2/sos.jpg"
+        },
+        {
             src: "pato/sfxpato1.mp4",
             desc: "Sound design",
             thumbnail: "thumbs2/sfxpato.png"
@@ -104,6 +109,7 @@ $(function(){
             desc: "Sound design",
             thumbnail: "thumbs1/videocoche.png"
         },
+        
         {
             src: "textures/texturess_1.mp4",
             desc: "3D Textures",
@@ -123,11 +129,6 @@ $(function(){
             src: "teaser/teaser1.mp4",
             desc: "Teaser Montage, Sound design",
             thumbnail: "thumbs2/teaser.png"
-        },
-        {
-            src: "sos/SOS_1.mp4",
-            desc: "VFX, Montage, Camera",
-            thumbnail: "thumbs2/sos.jpg"
         },
         
         
