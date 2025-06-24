@@ -45,9 +45,9 @@ $(function(){
             thumbnail: "LA2CLUBrnr/LA2CLUBrnr.png"
         },
         {
-            src: "BEArnr/BEArnr.mp4",
+            src: "ENJOYrnr/ENJOYrnr.mp4",
             desc: "Spotify Canva, Music, Mix & Master",
-            thumbnail: "BEArnr/BEArnr.png"
+            thumbnail: "ENJOYrnr/ENJOYrnr.png"
         },
         {
             src: "canva/canvaOS2.mp4",
