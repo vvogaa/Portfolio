@@ -40,14 +40,14 @@ $(function(){
             thumbnail: "SALAXCLUBrnr/SALAXCLUBrnr.jpg"
         },
         {
-            src: "LA2CLUBrnr/LACLUBrnr.mp4",
+            src: "LA2CLUBrnr/LA2CLUBrnr.mp4",
             desc: "Reel Design and animation",
-            thumbnail: "LA2CLUBrnr/LA2CLUBrnr.png"
+            thumbnail: "LA2CLUBrnr/LA2CLUBrnr.jpg"
         },
         {
             src: "ENJOYrnr/ENJOYrnr.mp4",
             desc: "Spotify Canva, Music, Mix & Master",
-            thumbnail: "ENJOYrnr/ENJOYrnr.png"
+            thumbnail: "ENJOYrnr/ENJOYrnr.jpg"
         },
         {
             src: "canva/canvaOS2.mp4",
