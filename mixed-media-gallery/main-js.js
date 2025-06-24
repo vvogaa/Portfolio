@@ -95,6 +95,16 @@ $(function(){
             thumbnail: "thumbs1/petri.png"
         },
         {
+            src: "pato/sfxpato1.mp4",
+            desc: "Sound design",
+            thumbnail: "thumbs2/sfxpato.png"
+        },
+        {
+            src: "coche/videocoche1.mp4",
+            desc: "Sound design",
+            thumbnail: "thumbs1/videocoche.png"
+        },
+        {
             src: "textures/texturess_1.mp4",
             desc: "3D Textures",
             thumbnail: "thumbs1/textures.png"
@@ -108,16 +118,6 @@ $(function(){
             src: "video1/SHAPES.mp4",
             desc: "3D Models, Shape keys",
             thumbnail: "thumbs2/shapes.png"
-        },
-        {
-            src: "pato/sfxpato1.mp4",
-            desc: "Sound design",
-            thumbnail: "thumbs2/sfxpato.png"
-        },
-        {
-            src: "coche/videocoche1.mp4",
-            desc: "Sound design",
-            thumbnail: "thumbs1/videocoche.png"
         },
         {
             src: "teaser/teaser1.mp4",
