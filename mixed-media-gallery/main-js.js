@@ -25,6 +25,11 @@ $(function(){
     
     const arrVideos = [
         {
+            src: "BEArnr/BEArnr.mp4",
+            desc: "Spotify Canva, Music, Mix & Master",
+            thumbnail: "BEArnr/BEArnr.jpg"
+        },
+        {
             src: "canva/canvaOS2.mp4",
             desc: "Spotify Canva, Music, Mix & Master",
             thumbnail: "thumbs1/canvaOS.png"
