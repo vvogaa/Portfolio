@@ -55,6 +55,11 @@ $(function(){
             thumbnail: "thumbs1/canvaOS.png"
         },
         {
+            src: "rrss/RRSS2.mp4",
+            desc: "Cover art, Promo reel, Music, Lyrics, Mix & Master",
+            thumbnail: "thumbs2/RRSS.png"
+        },
+        {
             src: "alitas/alitas_1.mp4",
             desc: "Videoclip, Music, Lyrics, Mix & Master",
             thumbnail: "thumbs1/alitas.png"
@@ -63,11 +68,6 @@ $(function(){
             src: "blu/blu.mp4",
             desc: "Visualizer, Music, Lyrics, Mix & Master",
             thumbnail: "thumbs1/blu.png"
-        },
-        {
-            src: "rrss/RRSS2.mp4",
-            desc: "Cover art, Promo reel, Music, Lyrics, Mix & Master",
-            thumbnail: "thumbs2/RRSS.png"
         },
          {
             src: "video1/PSSQEI.mp4",
