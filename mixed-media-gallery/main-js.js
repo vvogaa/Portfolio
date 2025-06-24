@@ -35,9 +35,9 @@ $(function(){
             thumbnail: "XXLrnr/XXLrnr.jpg"
         },
         {
-            src: "BEArnr/BEArnr.mp4",
+            src: "SALAXCLUBrnr/SALAXCLUBrnr.mp4",
             desc: "Spotify Canva, Music, Mix & Master",
-            thumbnail: "BEArnr/BEArnr.png"
+            thumbnail: "SALAXCLUBrnr/SALAXCLUBrnr.jpg"
         },
         {
             src: "BEArnr/BEArnr.mp4",
