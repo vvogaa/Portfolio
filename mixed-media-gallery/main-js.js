@@ -27,12 +27,12 @@ $(function(){
         {
             src: "BEArnr/BEArnr.mp4",
             desc: "Reel Animation",
-            thumbnail: "BEArnr/BEArnr.png"
+            thumbnail: "BEArnr/BEArnr.jpg"
         },
         {
             src: "XXLrnr/XXLrnr.mp4",
             desc: "Reel Animation",
-            thumbnail: "XXLrnr/XXLrnr.png"
+            thumbnail: "XXLrnr/XXLrnr.jpg"
         },
         {
             src: "BEArnr/BEArnr.mp4",
