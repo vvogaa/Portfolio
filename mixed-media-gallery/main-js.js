@@ -85,6 +85,16 @@ $(function(){
             thumbnail: "thumbs2/porsi.png"
         },
         {
+            src: "guess/guess_1.mp4",
+            desc: "Motion graphics, Sound design",
+            thumbnail: "thumbs1/ojo.png"
+        },
+        {
+            src: "petri/petri.mp4",
+            desc: "3D, VFX, Montage, Music, Lyrics, Mix & Master",
+            thumbnail: "thumbs1/petri.png"
+        },
+        {
             src: "textures/texturess_1.mp4",
             desc: "3D Textures",
             thumbnail: "thumbs1/textures.png"
@@ -108,16 +118,6 @@ $(function(){
             src: "coche/videocoche1.mp4",
             desc: "Sound design",
             thumbnail: "thumbs1/videocoche.png"
-        },
-        {
-            src: "guess/guess_1.mp4",
-            desc: "Motion graphics, Sound design",
-            thumbnail: "thumbs1/ojo.png"
-        },
-        {
-            src: "petri/petri.mp4",
-            desc: "3D, VFX, Montage, Music, Lyrics, Mix & Master",
-            thumbnail: "thumbs1/petri.png"
         },
         {
             src: "teaser/teaser1.mp4",
