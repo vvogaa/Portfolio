@@ -26,6 +26,26 @@ $(function(){
     const arrVideos = [
         {
             src: "BEArnr/BEArnr.mp4",
+            desc: "Reel Animation",
+            thumbnail: "BEArnr/BEArnr.png"
+        },
+        {
+            src: "XXLrnr/XXLrnr.mp4",
+            desc: "Reel Animation",
+            thumbnail: "XXLrnr/XXLrnr.png"
+        },
+        {
+            src: "BEArnr/BEArnr.mp4",
+            desc: "Spotify Canva, Music, Mix & Master",
+            thumbnail: "BEArnr/BEArnr.png"
+        },
+        {
+            src: "BEArnr/BEArnr.mp4",
+            desc: "Spotify Canva, Music, Mix & Master",
+            thumbnail: "BEArnr/BEArnr.png"
+        },
+        {
+            src: "BEArnr/BEArnr.mp4",
             desc: "Spotify Canva, Music, Mix & Master",
             thumbnail: "BEArnr/BEArnr.png"
         },
