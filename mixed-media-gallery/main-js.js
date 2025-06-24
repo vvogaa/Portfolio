@@ -60,6 +60,11 @@ $(function(){
             thumbnail: "thumbs2/RRSS.png"
         },
         {
+            src: "relleno/negro.mp4",
+            desc: "",
+            thumbnail: "relleno/negro.png"
+        },
+        {
             src: "alitas/alitas_1.mp4",
             desc: "Videoclip, Music, Lyrics, Mix & Master",
             thumbnail: "thumbs1/alitas.png"
