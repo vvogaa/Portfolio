@@ -36,12 +36,12 @@ $(function(){
         },
         {
             src: "SALAXCLUBrnr/SALAXCLUBrnr.mp4",
-            desc: "Spotify Canva, Music, Mix & Master",
+            desc: "Reel Design and animation",
             thumbnail: "SALAXCLUBrnr/SALAXCLUBrnr.jpg"
         },
         {
             src: "LA2CLUBrnr/LACLUBrnr.mp4",
-            desc: "Spotify Canva, Music, Mix & Master",
+            desc: "Reel Design and animation",
             thumbnail: "LA2CLUBrnr/LA2CLUBrnr.png"
         },
         {
