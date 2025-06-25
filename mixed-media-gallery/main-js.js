@@ -100,16 +100,10 @@ $(function(){
             thumbnail: "thumbs2/sos.jpg"
         },
         {
-            src: "pato/sfxpato1.mp4",
-            desc: "Sound design",
-            thumbnail: "thumbs2/sfxpato.png"
+            src: "relleno/negro.mp4",
+            desc: "",
+            thumbnail: "relleno/negro.png"
         },
-        {
-            src: "coche/videocoche1.mp4",
-            desc: "Sound design",
-            thumbnail: "thumbs1/videocoche.png"
-        },
-        
         {
             src: "textures/texturess_1.mp4",
             desc: "3D Textures",
@@ -125,6 +119,32 @@ $(function(){
             desc: "3D Models, Shape keys",
             thumbnail: "thumbs2/shapes.png"
         },
+        {
+            src: "relleno/negro.mp4",
+            desc: "",
+            thumbnail: "relleno/negro.png"
+        },
+        {
+            src: "pato/sfxpato1.mp4",
+            desc: "Sound design",
+            thumbnail: "thumbs2/sfxpato.png"
+        },
+        {
+            src: "coche/videocoche1.mp4",
+            desc: "Sound design",
+            thumbnail: "thumbs1/videocoche.png"
+        },
+        {
+            src: "relleno/negro.mp4",
+            desc: "",
+            thumbnail: "relleno/negro.png"
+        },
+        {
+            src: "relleno/negro.mp4",
+            desc: "",
+            thumbnail: "relleno/negro.png"
+        },
+        
         {
             src: "teaser/teaser1.mp4",
             desc: "Teaser Montage, Sound design",
