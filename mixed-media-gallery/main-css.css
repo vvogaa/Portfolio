@@ -233,6 +233,7 @@ background-repeat: no-repeat;*/
   .contacto{
   padding-top: 4.3% !important;
     padding-bottom: 4.3% !important;
+      font-size:80% !important;
 }
 .iconosintro{
     filter: saturate(0%) brightness(1) contrast(300%);
@@ -269,6 +270,6 @@ background-repeat: no-repeat;*/
   .contacto{
   padding-top: 6.2% !important;
     padding-bottom: 6.2% !important;
-      font-size:60%;
+      font-size:60% !important;
 }
 }
