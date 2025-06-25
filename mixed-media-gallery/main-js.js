@@ -105,9 +105,9 @@ $(function(){
             thumbnail: "relleno/negro.png"
         },
         {
-            src: "textures/texturess_1.mp4",
-            desc: "3D Textures",
-            thumbnail: "thumbs1/textures.png"
+            src: "video1/SHAPES.mp4",
+            desc: "3D Models, Shape keys",
+            thumbnail: "thumbs2/shapes.png"
         },
         {
             src: "animation/Animation_1.mp4",
@@ -115,9 +115,9 @@ $(function(){
             thumbnail: "thumbs1/bolacola.jpg"
         },
         {
-            src: "video1/SHAPES.mp4",
-            desc: "3D Models, Shape keys",
-            thumbnail: "thumbs2/shapes.png"
+            src: "textures/texturess_1.mp4",
+            desc: "3D Textures",
+            thumbnail: "thumbs1/textures.png"
         },
         {
             src: "relleno/negro.mp4",
