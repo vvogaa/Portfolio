@@ -183,6 +183,21 @@ background-repeat: no-repeat;*/
     line-height: 1em;
 
 }
+    .canciones1{
+    flex-direction: row !important;
+}
+.canciones2{
+    flex-direction: row !important;
+}
+.canciones3{
+    flex-direction: row !important;
+}
+.canciones4{
+    flex-direction: row !important;
+}
+.canciones5{
+    flex-direction: row !important;
+}
 
 @media screen and (max-width: 1080px){
     .contacto{
@@ -193,6 +208,21 @@ background-repeat: no-repeat;*/
 .iconosintro{
     filter: saturate(0%) brightness(1) contrast(300%);
     padding-top: 40vh;
+}
+    .canciones1{
+    flex-direction: row !important;
+}
+.canciones2{
+    flex-direction: row !important;
+}
+.canciones3{
+    flex-direction: row !important;
+}
+.canciones4{
+    flex-direction: row !important;
+}
+.canciones5{
+    flex-direction: row !important;
 }
 }
 /*Tablet*/
@@ -241,7 +271,20 @@ background-repeat: no-repeat;*/
     filter: saturate(0%) brightness(1) contrast(300%);
     padding-top: 40vh;
 }
-
+.canciones1{
+    flex-direction: column !important;
+}
+.canciones2{
+    flex-direction: column !important;
+}
+.canciones3{
+    flex-direction: column !important;
+}
+.canciones4{
+    flex-direction: column !important;
+}
+.canciones5{
+    flex-direction: column !important;
 }
 
 /*Mobile*/
@@ -273,5 +316,20 @@ background-repeat: no-repeat;*/
   /*padding-top: 6.2% !important;
     padding-bottom: 6.2% !important;*/
       font-size:60% !important;
+}
+    .canciones1{
+    flex-direction: column !important;
+}
+.canciones2{
+    flex-direction: column !important;
+}
+.canciones3{
+    flex-direction: column !important;
+}
+.canciones4{
+    flex-direction: column !important;
+}
+.canciones5{
+    flex-direction: column !important;
 }
 }
