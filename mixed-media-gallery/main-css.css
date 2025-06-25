@@ -198,6 +198,14 @@ background-repeat: no-repeat;*/
 .canciones5{
     flex-direction: row !important;
 }
+.carousel-control-next-icon{
+    height: 35px !important;
+    width: 35px !important;
+}
+.carousel-control-prev-icon{
+    height: 35px !important;
+    width: 35px !important;
+}
 
 @media screen and (max-width: 1080px){
     .contacto{
@@ -223,6 +231,14 @@ background-repeat: no-repeat;*/
 }
 .canciones5{
     flex-direction: row !important;
+}
+    .carousel-control-next-icon{
+    height: 35px !important;
+    width: 35px !important;
+}
+.carousel-control-prev-icon{
+    height: 35px !important;
+    width: 35px !important;
 }
 }
 /*Tablet*/
@@ -286,6 +302,16 @@ background-repeat: no-repeat;*/
 .canciones5{
     flex-direction: column !important;
 }
+.carousel-control-next-icon{
+    height: 25px !important;
+    width: 25px !important;
+}
+.carousel-control-prev-icon{
+    height: 25px !important;
+    width: 25px !important;
+}
+}
+    
 
 /*Mobile*/
 @media screen and (max-width: 425px){
@@ -331,5 +357,13 @@ background-repeat: no-repeat;*/
 }
 .canciones5{
     flex-direction: column !important;
+}
+    .carousel-control-next-icon{
+    height: 25px !important;
+    width: 25px !important;
+}
+.carousel-control-prev-icon{
+    height: 25px !important;
+    width: 25px !important;
 }
 }
