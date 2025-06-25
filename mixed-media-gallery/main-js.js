@@ -57,7 +57,7 @@ $(function(){
         {
             src: "rrss/RRSS2.mp4",
             desc: "Cover art, Promo reel, Music, Lyrics, Mix & Master",
-            thumbnail: "thumbs2/RRSS.png"
+            thumbnail: "thumbs2/RRSS.jpg"
         },
         {
             src: "relleno/negro.mp4",
