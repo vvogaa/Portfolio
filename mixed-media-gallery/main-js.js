@@ -148,7 +148,7 @@ $(function(){
         {
             src: "teaser/teaser1.mp4",
             desc: "Teaser Montage, Sound design",
-            thumbnail: "thumbs2/teaser.png"
+            thumbnail: "thumbs2/teaser.jpg"
         },
         
         
