@@ -127,7 +127,7 @@ $(function(){
         {
             src: "pato/sfxpato1.mp4",
             desc: "Sound design",
-            thumbnail: "thumbs2/sfxpato.png"
+            thumbnail: "thumbs2/sfxpato.jpg"
         },
         {
             src: "coche/videocoche1.mp4",
