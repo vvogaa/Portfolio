@@ -107,7 +107,7 @@ $(function(){
         {
             src: "video1/SHAPES.mp4",
             desc: "3D Models, Shape keys",
-            thumbnail: "thumbs2/shapes.png"
+            thumbnail: "thumbs2/shapes.jpg"
         },
         {
             src: "animation/Animation_1.mp4",
