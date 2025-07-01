@@ -100,7 +100,7 @@ $(function(){
             thumbnail: "thumbs2/sos.jpg"
         },
         {
-            src: "relleno/negro.mp4",
+            src: "",
             desc: "",
             thumbnail: "relleno/negro.png"
         },
@@ -120,7 +120,7 @@ $(function(){
             thumbnail: "thumbs1/textures.png"
         },
         {
-            src: "relleno/negro.mp4",
+            src: "",
             desc: "",
             thumbnail: "relleno/negro.png"
         },
@@ -135,12 +135,12 @@ $(function(){
             thumbnail: "thumbs1/videocoche.png"
         },
         {
-            src: "relleno/negro.mp4",
+            src: "",
             desc: "",
             thumbnail: "relleno/negro.png"
         },
         {
-            src: "relleno/negro.mp4",
+            src: "",
             desc: "",
             thumbnail: "relleno/negro.png"
         },
