@@ -60,7 +60,7 @@ $(function(){
             thumbnail: "thumbs2/RRSS.jpg"
         },
         {
-            src: "relleno/negro.mp4",
+            src: "",
             desc: "",
             thumbnail: "relleno/negro.png"
         },
