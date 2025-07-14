@@ -46,7 +46,7 @@ $(function(){
         },
         {
             src: "ENJOYrnr/ENJOYrnr.mp4",
-            desc: "Spotify Canva, Music, Mix & Master",
+            desc: "Reel Design and animation",
             thumbnail: "ENJOYrnr/ENJOYrnr.jpg"
         },
         {
@@ -58,6 +58,11 @@ $(function(){
             src: "rrss/RRSS2.mp4",
             desc: "Cover art, Promo reel, Music, Lyrics, Mix & Master",
             thumbnail: "thumbs2/RRSS.jpg"
+        },
+        {
+            src: "NXTrnr/NXTrnr.mp4",
+            desc: "3D Design, I.A. and Animation",
+            thumbnail: "NXTrnr/NXTrnr.jpg"
         },
         {
             src: "alitas/alitas_1.mp4",
