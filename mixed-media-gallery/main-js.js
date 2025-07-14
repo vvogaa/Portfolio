@@ -60,11 +60,6 @@ $(function(){
             thumbnail: "thumbs2/RRSS.jpg"
         },
         {
-            src: "",
-            desc: "",
-            thumbnail: "relleno/negro.png"
-        },
-        {
             src: "alitas/alitas_1.mp4",
             desc: "Videoclip, Music, Lyrics, Mix & Master",
             thumbnail: "thumbs1/alitas.png"
@@ -100,11 +95,6 @@ $(function(){
             thumbnail: "thumbs2/sos.jpg"
         },
         {
-            src: "",
-            desc: "",
-            thumbnail: "relleno/negro.png"
-        },
-        {
             src: "video1/SHAPES.mp4",
             desc: "3D Models, Shape keys",
             thumbnail: "thumbs2/shapes.jpg"
@@ -120,11 +110,6 @@ $(function(){
             thumbnail: "thumbs1/textures.png"
         },
         {
-            src: "",
-            desc: "",
-            thumbnail: "relleno/negro.png"
-        },
-        {
             src: "pato/sfxpato1.mp4",
             desc: "Sound design",
             thumbnail: "thumbs2/sfxpato.jpg"
@@ -133,16 +118,6 @@ $(function(){
             src: "coche/videocoche1.mp4",
             desc: "Sound design",
             thumbnail: "thumbs1/videocoche.png"
-        },
-        {
-            src: "",
-            desc: "",
-            thumbnail: "relleno/negro.png"
-        },
-        {
-            src: "",
-            desc: "",
-            thumbnail: "relleno/negro.png"
         },
         
         {
