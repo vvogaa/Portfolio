@@ -52,7 +52,7 @@ $(function(){
         {
             src: "canva/canvaOS2.mp4",
             desc: "Spotify Canva, Music, Mix & Master",
-            thumbnail: "thumbs1/canvaOS.png"
+            thumbnail: "thumbs1/canvaOS.jpg"
         },
         {
             src: "rrss/RRSS2.mp4",
