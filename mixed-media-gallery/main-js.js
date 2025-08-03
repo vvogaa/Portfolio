@@ -99,6 +99,11 @@ $(function(){
             desc: "VFX, Montage, Camera",
             thumbnail: "thumbs2/sos.jpg"
         },
+                {
+            src: "EH/EH.mp4",
+            desc: "VFX, Montage, Camera",
+            thumbnail: "EH/EH.jpg"
+        },
         {
             src: "video1/SHAPES.mp4",
             desc: "3D Models, Shape keys",
@@ -428,3 +433,4 @@ document.addEventListener('DOMContentLoaded', () => {
 //   setupAudioPlayer('play-button2', 'progress-bar2', 'audio2', 'mixed-media-gallery/play.svg', 'mixed-media-gallery/pause.svg');
 //   setupAudioPlayer('play-button3', 'progress-bar3', 'audio3', 'mixed-media-gallery/play.svg', 'mixed-media-gallery/pause.svg');
 // });
+
