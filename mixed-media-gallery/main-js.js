@@ -127,7 +127,7 @@ $(function(){
         {
             src: "coche/videocoche1.mp4",
             desc: "Sound design",
-            thumbnail: "thumbs1/videocoche.png"
+            thumbnail: "thumbs1/videocoche.jpg"
         },
         
         {
@@ -433,4 +433,5 @@ document.addEventListener('DOMContentLoaded', () => {
 //   setupAudioPlayer('play-button2', 'progress-bar2', 'audio2', 'mixed-media-gallery/play.svg', 'mixed-media-gallery/pause.svg');
 //   setupAudioPlayer('play-button3', 'progress-bar3', 'audio3', 'mixed-media-gallery/play.svg', 'mixed-media-gallery/pause.svg');
 // });
+
 
