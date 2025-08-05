@@ -101,7 +101,7 @@ $(function(){
         },
                 {
             src: "EH/EH.mp4",
-            desc: "VFX, Montage, Camera",
+            desc: "Color grading, Montage, Camera",
             thumbnail: "EH/EH.jpg"
         },
         {
@@ -118,6 +118,11 @@ $(function(){
             src: "textures/texturess_1.mp4",
             desc: "3D Textures",
             thumbnail: "thumbs1/textures.png"
+        },
+        {
+            src: "3D/3D.mp4",
+            desc: "3D Textures",
+            thumbnail: "3D/3D.jpg"
         },
         {
             src: "pato/sfxpato1.mp4",
@@ -433,5 +438,6 @@ document.addEventListener('DOMContentLoaded', () => {
 //   setupAudioPlayer('play-button2', 'progress-bar2', 'audio2', 'mixed-media-gallery/play.svg', 'mixed-media-gallery/pause.svg');
 //   setupAudioPlayer('play-button3', 'progress-bar3', 'audio3', 'mixed-media-gallery/play.svg', 'mixed-media-gallery/pause.svg');
 // });
+
 
 
