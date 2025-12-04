@@ -89,12 +89,12 @@ $(function(){
             desc: "Motion graphics, Sound design",
             thumbnail: "thumbs1/ojo.png"
         },
-        {
+        /*{
             src: "petri/petri.mp4",
             desc: "3D, VFX, Montage, Music, Lyrics, Mix & Master",
             thumbnail: "thumbs1/petri.png"
         },
-        /*{
+        {
             src: "sos/SOS_1.mp4",
             desc: "VFX, Montage, Camera",
             thumbnail: "thumbs2/sos.jpg"
@@ -433,6 +433,7 @@ document.addEventListener('DOMContentLoaded', () => {
 //   setupAudioPlayer('play-button2', 'progress-bar2', 'audio2', 'mixed-media-gallery/play.svg', 'mixed-media-gallery/pause.svg');
 //   setupAudioPlayer('play-button3', 'progress-bar3', 'audio3', 'mixed-media-gallery/play.svg', 'mixed-media-gallery/pause.svg');
 // });
+
 
 
 
