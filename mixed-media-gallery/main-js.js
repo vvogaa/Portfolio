@@ -25,9 +25,9 @@ $(function(){
     
     const arrVideos = [
         {
-            src: "BEArnr/BEArnr.mp4",
-            desc: "Reel Animation",
-            thumbnail: "BEArnr/BEArnr.jpg"
+            src: "NXTrnr/NXTrnr.mp4",
+            desc: "3D Design, I.A. and Animation",
+            thumbnail: "NXTrnr/NXTrnr.jpg"
         },
         /*{
             src: "XXLrnr/XXLrnr.mp4",
@@ -44,11 +44,6 @@ $(function(){
             desc: "Reel Design and animation",
             thumbnail: "LA2CLUBrnr/LA2CLUBrnr.jpg"
         },*/
-        {
-            src: "NXTINTrnr/NXTINTrnr.mp4",
-            desc: "3D design, animation and integration",
-            thumbnail: "NXTINTrnr/NXTINTrnr.png"
-        },
         {
             src: "canva/canvaOS2.mp4",
             desc: "Spotify Canva, Music, Mix & Master",
@@ -85,6 +80,11 @@ $(function(){
             thumbnail: "thumbs2/porsi.png"
         },*/
         {
+            src: "BEArnr/BEArnr.mp4",
+            desc: "Reel Animation",
+            thumbnail: "BEArnr/BEArnr.jpg"
+        },
+        {
             src: "guess/guess_1.mp4",
             desc: "Motion graphics, Sound design",
             thumbnail: "thumbs1/ojo.png"
@@ -94,11 +94,11 @@ $(function(){
             desc: "3D, VFX, Montage, Music, Lyrics, Mix & Master",
             thumbnail: "thumbs1/petri.png"
         },
-        {
+        /*{
             src: "sos/SOS_1.mp4",
             desc: "VFX, Montage, Camera",
             thumbnail: "thumbs2/sos.jpg"
-        },
+        },*/
                 {
             src: "EH/EH.mp4",
             desc: "Color grading, Montage, Camera",
@@ -438,6 +438,7 @@ document.addEventListener('DOMContentLoaded', () => {
 //   setupAudioPlayer('play-button2', 'progress-bar2', 'audio2', 'mixed-media-gallery/play.svg', 'mixed-media-gallery/pause.svg');
 //   setupAudioPlayer('play-button3', 'progress-bar3', 'audio3', 'mixed-media-gallery/play.svg', 'mixed-media-gallery/pause.svg');
 // });
+
 
 
 
