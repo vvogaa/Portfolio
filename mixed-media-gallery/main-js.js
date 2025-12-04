@@ -29,6 +29,11 @@ $(function(){
             desc: "3D Design, I.A. and Animation",
             thumbnail: "NXTrnr/NXTrnr.jpg"
         },
+        {
+            src: "video1/PSSQEI.mp4",
+            desc: "Kinetic text, Animation, Music, Lyrics, Mix & Master",
+            thumbnail: "thumbs2/PSSQEI.png"
+        },
         /*{
             src: "XXLrnr/XXLrnr.mp4",
             desc: "Reel Animation",
@@ -69,11 +74,6 @@ $(function(){
             desc: "Visualizer, Music, Lyrics, Mix & Master",
             thumbnail: "thumbs1/blu.png"
         },*/
-         {
-            src: "video1/PSSQEI.mp4",
-            desc: "Kinetic text, Animation, Music, Lyrics, Mix & Master",
-            thumbnail: "thumbs2/PSSQEI.png"
-        },
         /*{
             src: "porsi/porsi.mp4",
             desc: "Visualizer montage, VFX, Music, Lyrics, Mix & Master",
@@ -438,6 +438,7 @@ document.addEventListener('DOMContentLoaded', () => {
 //   setupAudioPlayer('play-button2', 'progress-bar2', 'audio2', 'mixed-media-gallery/play.svg', 'mixed-media-gallery/pause.svg');
 //   setupAudioPlayer('play-button3', 'progress-bar3', 'audio3', 'mixed-media-gallery/play.svg', 'mixed-media-gallery/pause.svg');
 // });
+
 
 
 
