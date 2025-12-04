@@ -29,21 +29,21 @@ $(function(){
             desc: "Reel Animation",
             thumbnail: "BEArnr/BEArnr.jpg"
         },
-        {
+       /* {
             src: "XXLrnr/XXLrnr.mp4",
             desc: "Reel Animation",
             thumbnail: "XXLrnr/XXLrnr.jpg"
-        },
+        },*/
         {
             src: "SALAXCLUBrnr/SALAXCLUBrnr.mp4",
             desc: "Reel Design and animation",
             thumbnail: "SALAXCLUBrnr/SALAXCLUBrnr.jpg"
         },
-        {
+        /*{
             src: "LA2CLUBrnr/LA2CLUBrnr.mp4",
             desc: "Reel Design and animation",
             thumbnail: "LA2CLUBrnr/LA2CLUBrnr.jpg"
-        },
+        },*/
         {
             src: "NXTINTrnr/NXTINTrnr.mp4",
             desc: "3D design, animation and integration",
@@ -54,36 +54,36 @@ $(function(){
             desc: "Spotify Canva, Music, Mix & Master",
             thumbnail: "thumbs1/canvaOS.jpg"
         },
-        {
+       /* {
             src: "rrss/RRSS2.mp4",
             desc: "Cover art, Promo reel, Music, Lyrics, Mix & Master",
             thumbnail: "thumbs2/RRSS.jpg"
-        },
+        },*/
         {
             src: "NXTrnr/NXTrnr.mp4",
             desc: "3D Design, I.A. and Animation",
             thumbnail: "NXTrnr/NXTrnr.jpg"
         },
-        {
+        /*{
             src: "alitas/alitas_1.mp4",
             desc: "Videoclip, Music, Lyrics, Mix & Master",
             thumbnail: "thumbs1/alitas.png"
-        },
-         {
+        },*/
+        /* {
             src: "blu/blu.mp4",
             desc: "Visualizer, Music, Lyrics, Mix & Master",
             thumbnail: "thumbs1/blu.png"
-        },
+        },*/
          {
             src: "video1/PSSQEI.mp4",
             desc: "Kinetic text, Animation, Music, Lyrics, Mix & Master",
             thumbnail: "thumbs2/PSSQEI.png"
         },
-        {
+       /* {
             src: "porsi/porsi.mp4",
             desc: "Visualizer montage, VFX, Music, Lyrics, Mix & Master",
             thumbnail: "thumbs2/porsi.png"
-        },
+        },*/
         {
             src: "guess/guess_1.mp4",
             desc: "Motion graphics, Sound design",
@@ -94,36 +94,36 @@ $(function(){
             desc: "3D, VFX, Montage, Music, Lyrics, Mix & Master",
             thumbnail: "thumbs1/petri.png"
         },
-        {
+        */{
             src: "sos/SOS_1.mp4",
             desc: "VFX, Montage, Camera",
             thumbnail: "thumbs2/sos.jpg"
-        },
+        },*/
                 {
             src: "EH/EH.mp4",
             desc: "Color grading, Montage, Camera",
             thumbnail: "EH/EH.jpg"
         },
-        {
+        /*{
             src: "video1/SHAPES.mp4",
             desc: "3D Models, Shape keys",
             thumbnail: "thumbs2/shapes.jpg"
-        },
+        },*/
         {
             src: "animation/Animation_1.mp4",
             desc: "3D Riggin, Animation, UV, Sound design",
             thumbnail: "thumbs1/bolacola.jpg"
         },
-        {
+        /*{
             src: "textures/texturess_1.mp4",
             desc: "3D Textures",
             thumbnail: "thumbs1/textures.png"
-        },
-        {
+        },*/
+        /*{
             src: "3D/3D.mp4",
             desc: "3D Textures",
             thumbnail: "3D/3D.jpg"
-        },
+        },*/
         {
             src: "pato/sfxpato1.mp4",
             desc: "Sound design",
@@ -438,6 +438,7 @@ document.addEventListener('DOMContentLoaded', () => {
 //   setupAudioPlayer('play-button2', 'progress-bar2', 'audio2', 'mixed-media-gallery/play.svg', 'mixed-media-gallery/pause.svg');
 //   setupAudioPlayer('play-button3', 'progress-bar3', 'audio3', 'mixed-media-gallery/play.svg', 'mixed-media-gallery/pause.svg');
 // });
+
 
 
 
