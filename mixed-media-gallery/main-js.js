@@ -114,11 +114,11 @@ $(function(){
             desc: "3D Riggin, Animation, UV, Sound design",
             thumbnail: "thumbs1/bolacola.jpg"
         },
-        {
+        /*{
             src: "textures/texturess_1.mp4",
             desc: "3D Textures",
             thumbnail: "thumbs1/textures.png"
-        },
+        },*/
         {
             src: "pato/sfxpato1.mp4",
             desc: "Sound design",
@@ -433,6 +433,7 @@ document.addEventListener('DOMContentLoaded', () => {
 //   setupAudioPlayer('play-button2', 'progress-bar2', 'audio2', 'mixed-media-gallery/play.svg', 'mixed-media-gallery/pause.svg');
 //   setupAudioPlayer('play-button3', 'progress-bar3', 'audio3', 'mixed-media-gallery/play.svg', 'mixed-media-gallery/pause.svg');
 // });
+
 
 
 
