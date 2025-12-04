@@ -49,16 +49,16 @@ $(function(){
             desc: "3D design, animation and integration",
             thumbnail: "NXTINTrnr/NXTINTrnr.png"
         },
-        {
+       /* {
             src: "canva/canvaOS2.mp4",
             desc: "Spotify Canva, Music, Mix & Master",
             thumbnail: "thumbs1/canvaOS.jpg"
-        },
-       /* {
+        },*/
+        {
             src: "rrss/RRSS2.mp4",
             desc: "Cover art, Promo reel, Music, Lyrics, Mix & Master",
             thumbnail: "thumbs2/RRSS.jpg"
-        },*/
+        },
         {
             src: "NXTrnr/NXTrnr.mp4",
             desc: "3D Design, I.A. and Animation",
@@ -438,6 +438,7 @@ document.addEventListener('DOMContentLoaded', () => {
 //   setupAudioPlayer('play-button2', 'progress-bar2', 'audio2', 'mixed-media-gallery/play.svg', 'mixed-media-gallery/pause.svg');
 //   setupAudioPlayer('play-button3', 'progress-bar3', 'audio3', 'mixed-media-gallery/play.svg', 'mixed-media-gallery/pause.svg');
 // });
+
 
 
 
