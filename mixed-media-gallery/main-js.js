@@ -84,11 +84,6 @@ $(function(){
             desc: "Kinetic text, Animation, Music, Lyrics, Mix & Master",
             thumbnail: "thumbs2/PSSQEI.png"
         },
-        {
-            src: "guess/guess_1.mp4",
-            desc: "Motion graphics, Sound design",
-            thumbnail: "thumbs1/ojo.png"
-        },
         /*{
             src: "petri/petri.mp4",
             desc: "3D, VFX, Montage, Music, Lyrics, Mix & Master",
@@ -113,6 +108,11 @@ $(function(){
             src: "animation/Animation_1.mp4",
             desc: "3D Riggin, Animation, UV, Sound design",
             thumbnail: "thumbs1/bolacola.jpg"
+        },
+        {
+            src: "guess/guess_1.mp4",
+            desc: "Motion graphics, Sound design",
+            thumbnail: "thumbs1/ojo.png"
         },
         /*{
             src: "textures/texturess_1.mp4",
@@ -433,6 +433,7 @@ document.addEventListener('DOMContentLoaded', () => {
 //   setupAudioPlayer('play-button2', 'progress-bar2', 'audio2', 'mixed-media-gallery/play.svg', 'mixed-media-gallery/pause.svg');
 //   setupAudioPlayer('play-button3', 'progress-bar3', 'audio3', 'mixed-media-gallery/play.svg', 'mixed-media-gallery/pause.svg');
 // });
+
 
 
 
